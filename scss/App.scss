@@ -1,0 +1,60 @@
+@use '_Store.scss';
+
+
+*{
+  font-family:Store.$font-stack;
+}
+
+body{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  background:Store.$color1;
+}
+
+
+
+.app-box{
+  width:90%;
+  margin: auto;
+  display:flex;
+  flex-direction: column;
+  grid-gap:5rem;
+}
+
+.body-box{
+  display:flex;
+  flex-direction: column;
+  grid-gap:8rem;
+}
+
+#prim-btn{
+  background: Store.$color2;
+  color:#f3f3f3;
+  font-size:18px;
+  padding:.6em .8em;
+  border:none;
+  border-radius:8px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap:.5rem;
+}
+
+
+@media only screen and (min-width:1200px){
+  .app-box{
+    width:80%;
+  }
+
+  #prim-btn{
+    font-size:20px;
+  }
+  
+
+  /* .header-box, .body-box, .footer{
+    border:1px solid;
+  } */
+}

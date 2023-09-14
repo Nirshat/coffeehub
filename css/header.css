@@ -1,0 +1,40 @@
+
+
+.header-box{
+  /* border:1px solid; */
+  padding:2rem 0;
+  display:grid;
+  grid-template-columns: 1fr auto;
+}
+
+
+.logo-box{
+  font-size:24px;
+  font-weight: bold;
+  color:#412c10;
+  color:#333;
+  /* border:1px solid brown; */
+}
+
+.logoHL {
+  color:#eaac5b;
+  color:brown;
+}
+
+.nav-box{
+  display:flex;
+  grid-gap:2rem;
+}
+
+/* .nav-item{
+  border:1px solid;
+} */
+
+
+
+@media only screen and (min-width:1200px){
+  .nav-item{
+    font-size:17px;
+    /* background:#0000001f; */
+  }
+}
