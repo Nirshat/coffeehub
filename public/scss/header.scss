@@ -1,0 +1,52 @@
+
+
+.header-box{
+  /* border:1px solid; */
+  padding:2rem 0;
+  display:grid;
+  grid-template-columns: 1fr auto;
+}
+
+
+.logo-box{
+  display:flex;
+  align-items: center;
+  grid-gap:5px;
+  cursor: pointer;
+  img{
+    height:2rem;
+  }
+  #name{
+    font-size:24px;
+    font-weight: bold;
+    color:#412c10;
+    color:#333;
+  }
+}
+
+.logoHL {
+  color:#eaac5b;
+  color:brown;
+}
+
+.nav-box{
+  display:flex;
+  grid-gap:1em;
+}
+
+.nav-item{
+  i{
+    color:#444;
+    font-size:26px;
+  }
+}
+
+
+
+@media only screen and (min-width:1200px){
+  .nav-item{
+    i{
+      font-size:28px;
+    }
+  }
+}

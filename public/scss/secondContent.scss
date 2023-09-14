@@ -1,0 +1,91 @@
+@use '_Store';
+
+.second-content-box{
+  display: flex;
+  flex-direction: column;
+  grid-gap:3rem;
+}
+
+.qualities{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap:2rem;
+
+  div{
+    // border:1px solid;
+    span{
+      font-weight: bold;
+      font-size:17px;
+    }
+  }
+}
+
+
+.about-box{
+  display: flex;
+  flex-direction: column;
+  grid-gap:2em;
+
+  #box1{
+    // border:1px solid;
+    text-align: center;
+    img{
+      border-radius:20px;
+      height:12rem;
+      width:100%;
+    }
+  }
+
+  #box2{
+    h1{
+      margin:8px 0;
+      font-size:3rem;
+      font-weight: bolder;
+    }
+  }
+}
+
+
+
+
+
+
+@media only screen and (min-width:700px){
+  .about-box{
+    #box1{
+      text-align:start;
+      img{
+        height:20rem;
+        width:70%;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1200px){
+  .qualities{
+    display:flex;
+    grid-gap:1.5rem;
+  }
+  
+  .about-box{
+    display: flex;
+    flex-direction: row;
+    grid-gap:2em;
+
+    #box1{
+      text-align: start;
+      img{
+        height:23rem;
+        width:auto;
+      }
+    }
+  }
+}

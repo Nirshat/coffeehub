@@ -1,0 +1,78 @@
+@use '_Store';
+
+.footer-box{
+  padding:1rem;
+  margin-top:6rem;
+  background-color: Store.$color4;
+  *{
+    color:#444;
+  }
+  .footer-info-box{
+    display:flex;
+    flex-direction: column;
+    grid-gap:2rem;
+    .info1{
+      .logobox{
+        display:flex;
+        grid-gap:10px;
+        align-items: center;
+        img{
+          height:5rem;
+        }
+      }
+    }
+    // .info1, .info2, .info3{
+    //   border: 1px solid;
+    // }
+    .info2, .info3{
+      display: flex;
+      flex-direction: column;
+      grid-gap:.6rem;
+      h3{
+        margin:0;
+      }
+    }
+    
+  }
+  .footer-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap:1rem;
+
+    hr{
+      width:100%;
+      color:#f5f5f5;
+    }
+  }
+}
+
+
+@media only screen and (min-width:1200px){
+  .footer-box{
+    .footer-info-box{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap:2rem;
+      padding:1rem 2rem;
+      .info1{
+        .logobox{
+          img{
+            height:6rem;
+          }
+          h1{
+            font-size:3rem;
+            margin:0;
+            span{
+              color:#e4671f;
+              color: brown;
+            }
+          }
+        }
+      }
+      // .info1, .info2, .info3{
+      //   border: 1px solid;
+      // }
+    }
+  }
+}

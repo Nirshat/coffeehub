@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+$font-stack:'Questrial', sans-serif;
+
+// Color Palletes
+$color1: #FFFAF6;
+$color2: brown;
+$color3: #84694C;
+$color4: #e7d4c2;
+$color5: #665334;
+
+*{
+  font-family:100% $font-stack;
+}
